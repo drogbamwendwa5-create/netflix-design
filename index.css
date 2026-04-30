@@ -253,7 +253,7 @@ main{
     .featured-content{
         left: 16px;
         right: 16px;
-        bottom: 34px;
+        bottom: 86px;
         width: auto;
     }
 
@@ -279,6 +279,7 @@ main{
         height: 36px;
         padding-inline: 16px;
         flex: 1 1 130px;
+        white-space: nowrap;
     }
 
     .img{
@@ -321,7 +322,21 @@ main{
 
 @media (max-width: 420px){
     .featured{
-        min-height: min(440px, 64svh);
+        min-height: min(520px, 74svh);
+    }
+
+    .featured-content{
+        bottom: 78px;
+    }
+
+    .featured-actions{
+        flex-direction: column;
+    }
+
+    .press,
+    .press1{
+        width: 100%;
+        flex-basis: auto;
     }
 
     .navbar > div{
@@ -339,13 +354,12 @@ main{
 }
 
 @media (max-width: 340px){
-    .featured-actions{
-        flex-direction: column;
+    .featured{
+        min-height: 520px;
     }
 
-    .press,
-    .press1{
-        width: 100%;
+    .featured-content{
+        bottom: 72px;
     }
 
     .cards{
